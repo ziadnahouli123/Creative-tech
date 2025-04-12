@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CreatiVerse – The Future of Creativity</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -11,31 +13,33 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9; /* Light background for body */
+      background-color: #f9f9f9;
       color: #333;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b); /* Futuristic gradient for header */
+      background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
       color: white;
       padding: 100px 20px;
       text-align: center;
-      position: relative;
     }
 
     header h1 {
       font-size: 3.5em;
       margin-bottom: 10px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Adds shadow to make text stand out */
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
     }
 
     header p {
       font-size: 1.5em;
-      opacity: 0.9;
-      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Adds subtle shadow for better readability */
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     }
 
     .container {
@@ -87,6 +91,13 @@
       text-decoration: none;
       display: inline-block;
       margin-top: 20px;
+      transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #3e8e89;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
     }
 
     footer {
@@ -113,8 +124,17 @@
       width: 100%;
       border-radius: 10px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-      pointer-events: none; /* Prevent click interaction */
-      user-drag: none; /* Disable dragging of images */
+      pointer-events: none;
+      user-drag: none;
+    }
+
+    input[type="email"] {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-right: 10px;
+      width: 250px;
+      max-width: 90%;
     }
 
     @media (max-width: 768px) {
@@ -131,28 +151,24 @@
     <p>The Future of Creativity Starts Here</p>
   </header>
 
-  <div class="container">
+  <main class="container">
 
-    <!-- About Section -->
-    <section>
+    <section data-aos="fade-up">
       <h2>About CreatiVerse</h2>
       <p>CreatiVerse is a digital platform that empowers creators by combining technology with imagination. We provide accessible, powerful tools for digital artists, AI-powered musicians, and global creators to connect, collaborate, and showcase their talent from anywhere in the world.</p>
     </section>
 
-    <!-- Problem Section -->
-    <section>
+    <section data-aos="fade-up">
       <h2>The Problem</h2>
       <p>Many talented individuals lack access to studios, tools, and exposure to share their work. Barriers like cost, geography, and limited opportunities hold creators back.</p>
     </section>
 
-    <!-- Solution Section -->
-    <section>
+    <section data-aos="fade-up">
       <h2>The Solution</h2>
       <p>CreatiVerse is a creative tech hub offering virtual studios, AI-driven music tools, and digital art galleries. It levels the playing field—making professional-level creative tools accessible and collaborative.</p>
     </section>
 
-    <!-- Featured Ideas/Creative Tech Solutions -->
-    <section>
+    <section data-aos="fade-up">
       <h2>What We Offer</h2>
       <div class="features">
         <div class="feature-box">
@@ -170,45 +186,71 @@
       </div>
     </section>
 
-    <!-- Interactive Demo Section -->
-    <section>
+    <section data-aos="fade-up">
       <h2>Try It Yourself</h2>
       <p>Click below to experience a mock demo of what CreatiVerse could look like!</p>
-      <a href="creative tech demo.html" class="cta-button">Launch Demo</a> <!-- Replace with the actual demo URL -->
+      <a href="creative tech demo.html" class="cta-button">Launch Demo</a>
     </section>
 
-    <!-- AI Music Example -->
-    <section>
-  <h2>Sample AI Music</h2>
-  <p>Here’s an example of AI-generated music created by our smart composer tools:</p>
-  <audio controls>
-    <source src="music1.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</section>
+    <section data-aos="fade-up">
+      <h2>Sample AI Music</h2>
+      <p>Here’s an example of AI-generated music created by our smart composer tools:</p>
+      <audio controls>
+        <source src="music1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
 
-    <!-- Image Gallery for Creative Work -->
-    <section>
+    <section data-aos="fade-up">
       <h2>Creative Work Showcase</h2>
       <div class="gallery">
-        <img src="2fdf820d-721d-49de-b83d-b4f9214bd8ef.jpg" alt="Art piece 1" />
-        <img src="47f60cc0-c0ab-42e0-a2ed-766429983022.jpg" alt="Art piece 2" />
-        <img src="97fbce68-4082-4e08-b558-9c09878afa34.jpg" alt="Art piece 3" />
+        <img src="2fdf820d-721d-49de-b83d-b4f9214bd8ef.jpg" alt="Digital art of futuristic city" />
+        <img src="47f60cc0-c0ab-42e0-a2ed-766429983022.jpg" alt="Abstract creative painting" />
+        <img src="97fbce68-4082-4e08-b558-9c09878afa34.jpg" alt="3D concept design art" />
       </div>
     </section>
 
-    <!-- Contact/Call to Action -->
-    <section>
+    <section data-aos="fade-up">
+      <h2>What Creators Are Saying</h2>
+      <div class="features">
+        <div class="feature-box">
+          <p>"CreatiVerse helped me launch my career as a digital artist!"</p>
+          <strong>- Mia R., Concept Artist</strong>
+        </div>
+        <div class="feature-box">
+          <p>"I composed an entire album using AI tools—mind-blowing tech."</p>
+          <strong>- Kofi A., Musician</strong>
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Stay in the Loop</h2>
+      <p>Subscribe for updates on new tools and features!</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button class="cta-button" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section data-aos="fade-up">
       <h2>Join the Creative Revolution</h2>
       <p>Are you a creator looking to break free from limits? Be part of the CreatiVerse and shape the future of creative tech with us.</p>
       <a href="#" class="cta-button">Get Started</a>
     </section>
 
-  </div>
+  </main>
 
   <footer>
     <p>© 2025 CreatiVerse | Designed for Visionaries | Made with ❤️ + Code</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Preloading Images -->
+  <link rel="preload" href="2fdf820d-721d-49de-b83d-b4f9214bd8ef.jpg" as="image">
+  <link rel="preload" href="47f60cc0-c0ab-42e0-a2ed-766429983022.jpg" as="image">
+  <link rel="preload" href="97fbce68-4082-4e08-b558-9c09878afa34.jpg" as="image">
 </body>
 </html>
